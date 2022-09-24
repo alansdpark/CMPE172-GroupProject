@@ -4,5 +4,33 @@ CREATE TABLE Customer (
     FirstName varchar(255) NOT NULL,
     LastName varchar(255) NOT NULL,
     HomeAddress varchar(255) NOT NULL,
-    PhoneNumber varchar(255) NOT NULL
+    PhoneNumber char(11) NOT NULL
+);
+
+CREATE TABLE Airplane (
+    Avaliable_seat char(5) NOT NULL,
+    Total_seat char(5) NOT NULL,
+    Plane_ID char(9) NOT NULL,
+    Plane_model varchar(255) NOT NULL
+);
+
+CREATE TABLE Airplane_Schedule(
+    Date_Depart DATE NOT NULL,
+    Date_Land DATE NOT NULL,
+    Schedule_ID char(9) NOT NULL,
+    Location_ID_start char(9) NOT NULL,
+    Location_ID_end char(9) NOT NULL
+);
+
+CREATE TABLE Ticket(
+    Customer_ID char(9) NOT NULL,
+    Ticket_ID char(9) NOT NULL,
+    Fullname varchar(255) NOT NULL,
+    Mem_Start DATE NOT NULL,
+    Mem_End DATE NOT NULL
+);
+
+CREATE TABLE Airport (
+    Airport_name varchar(255) NOT NULL,
+    Airport_ID char(9)  NOT NULL
 );
