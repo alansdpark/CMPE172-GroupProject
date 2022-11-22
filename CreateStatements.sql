@@ -25,7 +25,6 @@ CREATE TABLE Airplane_Schedule(
 CREATE TABLE Ticket(
     Customer_ID char(9) NOT NULL,
     Ticket_ID char(9) NOT NULL,
-    Fullname varchar(255) NOT NULL,
     Mem_Start DATE NOT NULL,
     Mem_End DATE NOT NULL
 );
