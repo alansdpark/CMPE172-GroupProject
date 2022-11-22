@@ -8,7 +8,7 @@ CREATE TABLE Customer (
 );
 
 CREATE TABLE Airplane (
-    Avaliable_seat char(5) NOT NULL,
+    Seat_Location_ID char(5) NOT NULL,
     Total_seat char(5) NOT NULL,
     Plane_ID char(9) NOT NULL,
     Plane_model varchar(255) NOT NULL
@@ -19,14 +19,19 @@ CREATE TABLE Airplane_Schedule(
     Date_Land DATE NOT NULL,
     Schedule_ID char(9) NOT NULL,
     Location_ID_start char(9) NOT NULL,
-    Location_ID_end char(9) NOT NULL
+    Location_ID_end char(9) NOT NULL,
+    Plane_ID char(11),
+    Time_Depart char(9),
+    Time_Land char(9),
+    Gate_Num char(9)
 );
 
 CREATE TABLE Ticket(
-    Customer_ID char(9) NOT NULL,
+    Cust_ID char(9) NOT NULL,
     Ticket_ID char(9) NOT NULL,
-    Mem_Start DATE NOT NULL,
-    Mem_End DATE NOT NULL
+    Schedule_ID char(9),
+    Seat_Location_ID char(9),
+    Type_ID char(9),
 );
 
 CREATE TABLE Airport (
@@ -45,5 +50,7 @@ create table Membership(
 Category varchar(9) Not Null,
 Mem_ID char(9) Not Null,
 Mem_Name varchar(9) NOT NULL,
+Mem_Start DATE NOT NULL,
+Mem_End DATE NOT NULL,
 PRIMARY KEY(Mem_ID)
 );
