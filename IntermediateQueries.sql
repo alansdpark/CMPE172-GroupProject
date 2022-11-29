@@ -1,5 +1,5 @@
--- Get model of plane / total seats for each airplane schedule
-select Plane_model, Total_seat, Location_ID_start, Location_ID_end, Date_Depart, Date_Land, Time_Depart, Time_Land from Airplane as a JOIN Airplane_Schedule as b ON a.Plane_ID=b.Plane_ID; 
+-- Get gate number, date, time, seat location for ticket ID
+select Ticket_ID, Gate_Num, Date_Depart, Time_Depart, Seat_Location_ID from Ticket as a join Airplane_Schedule as b ON a.Schedule_ID=b.Schedule_ID;
 
 -- Get tickets by customer
 select FirstName, LastName, Ticket_ID from Customer as a JOIN Ticket as b ON a.Cust_ID=b.Cust_ID;
