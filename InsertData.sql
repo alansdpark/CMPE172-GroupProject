@@ -29,10 +29,10 @@ insert into Airplane_Schedule values ('2023-03-08', '2023-03-08', '01', '2', '3'
 
 -- Membership
 insert into Membership values ('GOLD', '11111', 'John', '2019-11-28', '2024-12-31');
-insert into Membership values ('SILVER', '11112', 'John', '2021-01-05', '2023-01-05');
-insert into Membership values ('BRONZE', '11113', 'Allen', '2019-03-13', '2025-11-26');
-insert into Membership values ('GOLD', '11114', 'Alan', '2023-02-08', '2022-11-07');
-insert into Membership values ('BRONZE', '11115', 'Aparna', '2020-06-10', '2026-06-30');
+insert into Membership values ('SILVER', '22222', 'John', '2021-01-05', '2023-01-05');
+insert into Membership values ('BRONZE', '11112', 'Allen', '2019-03-13', '2025-11-26');
+insert into Membership values ('GOLD', '11113', 'Alan', '2023-02-08', '2022-11-07');
+insert into Membership values ('BRONZE', '11114', 'Aparna', '2020-06-10', '2026-06-30');
 
 
 -- TicketType
