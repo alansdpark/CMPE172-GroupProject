@@ -15,7 +15,7 @@ Join Airport as d on d.Airport_ID = c.Location_ID_start
 where Airport_name = 'San Francisco Airport';
 
 #Number 3
-select FirstName,LastName,Type_ID from Ticket,Customer where Ticket.Cust_ID = Customer.Cust_ID and Type_ID in
+select Ticket_ID,Type_ID from Ticket where Type_ID in
 (select Type_ID from TicketType where price > 300.00);
 
 #Number 4
