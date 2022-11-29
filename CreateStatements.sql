@@ -9,7 +9,6 @@ CREATE TABLE Customer (
 );
 
 CREATE TABLE Airplane (
-    Seat_Location_ID char(5) NOT NULL,
     Total_seat char(5) NOT NULL,
     Plane_ID char(9) NOT NULL,
     Plane_model varchar(255) NOT NULL,
