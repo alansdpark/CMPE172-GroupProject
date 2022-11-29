@@ -13,8 +13,7 @@ CREATE TABLE Airplane (
     Total_seat char(5) NOT NULL,
     Plane_ID char(9) NOT NULL,
     Plane_model varchar(255) NOT NULL,
-    PRIMARY KEY(Plane_ID),
-    Unique(Seat_Location_ID)
+    PRIMARY KEY(Plane_ID)
 );
 
 
@@ -66,7 +65,6 @@ CREATE TABLE Ticket(
     PRIMARY KEY(Ticket_ID),
     Foreign Key(Cust_ID) references Customer(Cust_ID),
     Foreign Key(Schedule_ID) references Airplane_Schedule(Schedule_ID),
-    Foreign Key(Seat_Location_ID) references Airplane(Seat_Location_ID),
     Foreign Key(Type_ID) references TicketType(Type_ID)
 );
 
