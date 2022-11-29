@@ -13,9 +13,11 @@ insert into Airplane values ("D1",500,111112,"747");
 
 -- Airplane_Schedule
 insert into Airplane_Schedule values (DATE '2022-11-10','2022-11-12',12345,1,2);
+insert into Airplane_Schedule values (DATE '2022-11-20','2022-11-21',67890,2,3);
 
 -- Ticket
 insert into Ticket values (11111, 12345,"John Doe",'2022-11-10','2023-11-10');
+insert into Ticket values (22222, 67890,"Alan Park",'2022-11-20','2023-11-20');
 
 -- Airport
 insert into Airport values ("San Francisco Airport",1);
